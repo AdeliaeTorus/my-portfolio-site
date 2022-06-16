@@ -1,0 +1,105 @@
+@import "./_variables.scss";
+
+
+
+/*
+Light theme
+================================== */
+
+@mixin box-shadow_light_inset {
+  box-shadow: var(--box-shadow-inset);
+}
+
+@mixin box-shadow_light {
+  box-shadow: var(--box-shadow);
+}
+
+@mixin text-emphasis-light {
+  text-shadow: 0 0 10px var(--sub-color),0 0 15px var(--sub-color);
+}
+
+
+
+
+
+
+/*
+Dark theme
+===================================== */
+
+@mixin box-shadow_dark_inset {
+  box-shadow: var(--box-shadow-inset);
+}
+
+@mixin box-shadow_dark {
+  box-shadow:  var(--box-shadow);
+}
+
+@mixin text-emphasis-dark {
+  text-shadow: 0 0 10px var(--main-color),0 0 15px var(--main-color);
+}
+
+
+
+
+
+/*
+General
+================================== */
+
+@mixin box-shadow_nullify {
+  box-shadow: none;
+}
+
+@mixin contents_global {
+  width: 86%;
+  border-radius: 0px;
+  
+  @include box-shadow_light;
+
+  padding: 1rem;
+  margin: 2rem 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin p_text-indent {
+  margin: 0;
+  text-indent: 1em;
+}
+
+@mixin transition_general {
+  transition: 0.4s ease;
+}
+
+
+
+
+
+
+/*
+Responsive
+================================================ */
+@mixin responsive_header_width {
+  padding-left: calc((100% - 700px)/2);
+  padding-right: calc((100% - 700px)/2);
+}
+
+@mixin responsive_container_width {
+  width: 700px;
+  right: calc((100% - 700px)/2);
+}
+
+
+@mixin responsive_header_height {
+  height: 50px;
+}
+
+@mixin responsive_container_height {
+  height: calc(100% - 50px - (100px / 3));
+  top: 50px;
+}
+
+@mixin responsive_footer_height {
+  height: calc(100px / 3);
+}

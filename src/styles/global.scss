@@ -1,0 +1,73 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+#app {
+  font-family: 'Noto Serif JP', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 150%;
+}
+
+a {
+  color: var(--sub-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.underlined {
+  text-decoration: underline solid 0.1em;
+
+  &:hover {
+    @include text-emphasis-light;
+  }
+}
+
+.underlined-reverse {
+  text-decoration: underline solid 0.1em;
+
+  &:hover {
+    @include text-emphasis-dark;
+  }
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+  color: var(--sub-color);
+  background-color: var(--main-color);
+  
+  @include transition_general;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+/*
+Dark theme
+===================================== */
+@media (prefers-color-scheme: dark) {
+  body, html {
+    color: var(--main-color);
+    background-color: var(--sub-color);
+  }
+
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .underlined {
+    text-decoration: underline solid 0.1em;
+  
+    &:hover {
+      @include text-emphasis-dark;
+    }
+  }
+}

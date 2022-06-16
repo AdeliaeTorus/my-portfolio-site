@@ -1,0 +1,19 @@
+:root {
+  --main-color: #ffffff;
+  --sub-color: #264054;
+
+  --box-shadow-inset: inset 50px 50px 100px #666666, inset -50px -50px 100px #ffffff;
+  --box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
+
+  --toggle-button: "Dark";
+}
+
+:root.dark {
+  --main-color: #264054;
+  --sub-color: #ffffff;
+
+  --box-shadow-inset: inset 50px 50px 100px #0f1a22, inset -50px -50px 100px #3d6686;
+  --box-shadow:  5px 5px 10px #0f1a22, -5px -5px 10px #3d6686;
+
+  --toggle-button: "Light";
+}
