@@ -18,15 +18,7 @@ a {
   text-decoration: underline solid 0.1em;
 
   &:hover {
-    @include text-emphasis-light;
-  }
-}
-
-.underlined-reverse {
-  text-decoration: underline solid 0.1em;
-
-  &:hover {
-    @include text-emphasis-dark;
+    @include text-emphasis;
   }
 }
 
@@ -43,31 +35,3 @@ html, body {
     display: none;
 }
 
-
-
-
-
-
-/*
-Dark theme
-===================================== */
-@media (prefers-color-scheme: dark) {
-  body, html {
-    color: var(--main-color);
-    background-color: var(--sub-color);
-  }
-
-  a {
-    color: var(--main-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .underlined {
-    text-decoration: underline solid 0.1em;
-  
-    &:hover {
-      @include text-emphasis-dark;
-    }
-  }
-}

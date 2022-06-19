@@ -24,27 +24,11 @@ export default {
   right: 5%;
   border-radius: 10px;
     
-  @include box-shadow_light_inset;
+  @include box-shadow_inset;
 }
 
 .contents {  
   @include contents_global;
-}
-
-
-
-
-/*
-Dark theme
-===================================== */
-@media (prefers-color-scheme: dark) {
-  .container {
-    @include box-shadow_dark_inset;
-  }
-
-  .contents {
-    @include box-shadow_dark
-  }
 }
 
 

@@ -14,7 +14,7 @@ export default {
   }
 }
 
-if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   document.documentElement.classList.add('dark');
 }
 </script>
@@ -41,14 +41,6 @@ div {
 
 
 
-/*
-Dark theme
-===================================== */
-@media (prefers-color-scheme: dark) {
-  button {
-  color: var(--sub-color);
-  background: var(--main-color);
-  }
-}
+
 
 </style>

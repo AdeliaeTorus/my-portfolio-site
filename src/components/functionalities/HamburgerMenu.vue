@@ -156,18 +156,4 @@ Responsive
 
 
 
-
-
-/*
-Dark theme
-===================================== */
-@media (prefers-color-scheme: dark) {
-  .menu-icon {
-
-    & > span {
-      background-color: var(--main-color);
-    }
-  }
-}
-
 </style>

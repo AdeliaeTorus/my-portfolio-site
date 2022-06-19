@@ -3,41 +3,21 @@
 
 
 /*
-Light theme
+related to color theme
 ================================== */
 
-@mixin box-shadow_light_inset {
+@mixin box-shadow_inset {
   box-shadow: var(--box-shadow-inset);
 }
 
-@mixin box-shadow_light {
+@mixin box-shadow {
   box-shadow: var(--box-shadow);
 }
 
-@mixin text-emphasis-light {
+@mixin text-emphasis {
   text-shadow: 0 0 10px var(--sub-color),0 0 15px var(--sub-color);
 }
 
-
-
-
-
-
-/*
-Dark theme
-===================================== */
-
-@mixin box-shadow_dark_inset {
-  box-shadow: var(--box-shadow-inset);
-}
-
-@mixin box-shadow_dark {
-  box-shadow:  var(--box-shadow);
-}
-
-@mixin text-emphasis-dark {
-  text-shadow: 0 0 10px var(--main-color),0 0 15px var(--main-color);
-}
 
 
 
@@ -55,7 +35,7 @@ General
   width: 86%;
   border-radius: 0px;
   
-  @include box-shadow_light;
+  @include box-shadow;
 
   padding: 1rem;
   margin: 2rem 0;
