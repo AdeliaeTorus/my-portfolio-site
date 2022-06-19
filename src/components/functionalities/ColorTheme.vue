@@ -14,7 +14,7 @@ export default {
   }
 }
 
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
   document.documentElement.classList.add('dark');
 }
 </script>
