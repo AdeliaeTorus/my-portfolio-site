@@ -20,12 +20,14 @@
         <textarea name="entry.1885764049" cols="30" rows="10" placeholder="Message"></textarea>
       </div>
       
-      <div class="form-element form-buttons">
-        <div >
-          <input type="submit" value="Submit" class="form-button" @click="notification">
-        </div>
-        <div id="form-button">
-          <input type="reset" value="Reset" id="reset" class="form-button">
+      <div class="form-element form-buttons-wrapper">
+        <div class="form-buttons">
+          <div>
+            <input type="submit" value="Submit" class="form-button" @click="notification">
+          </div>
+          <div>
+            <input type="reset" value="Reset" id="reset" class="form-button">
+          </div>
         </div>
       </div>
 
@@ -93,10 +95,16 @@ input, textarea {
 }
 
 .form-buttons {
-  padding: 0 33%;
+  width: 120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.form-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 </style>
