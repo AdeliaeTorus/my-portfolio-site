@@ -62,13 +62,13 @@ hamburger-button
   & > .line {
     position: absolute;
     background-color: var(--sub-color);
-    top: 0;
+    top: 5px;
     height: 3px;
     width: 35px;
   }
 
   & > .line-01 {
-    top: 0;
+    top: 0px;
   }
 
   & > .line-02 {

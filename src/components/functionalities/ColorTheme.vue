@@ -23,16 +23,22 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 @import "../../styles/_variables.scss";
 
 div {
-  top: calc((100% - 30px)/2);
+  top: calc((100% - 33px)/2);
 
   position: absolute;
   height: 30px;
   width: 45px;
-  border-radius: 5px;
+  border-radius: 0px;
+  border: inset var(--sub-color);
   color: var(--main-color);
   background: var(--sub-color);
   text-align: center;
   cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
   
   &::before {
     content: var(--toggle-button);
