@@ -2,28 +2,32 @@
   <div class="contents" id="contact">
     <h2 class="title">Contact</h2>
 
-    <form method="post" target="submitComplate" @submit="checkForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqkvIPJKsS6GAeiVrkgsSYkjrx9vNt5eYFC4-5fCX9MS-4BQ/formResponse">
+    <form method="post" target="submitComplete" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqkvIPJKsS6GAeiVrkgsSYkjrx9vNt5eYFC4-5fCX9MS-4BQ/formResponse">
     
       <div class="form-element" id="name">
-        <input type="text" name="entry.1744693801" placeholder="Name">
+        <input type="text" name="entry.1744693801" placeholder="Name" v-model="state.name">
+        <span v-if="v$.name.$error">{{ v$.name.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="mail">
-        <input type="email" name="emailAddress" placeholder="Email">
+        <input type="email" name="emailAddress" placeholder="Email" v-model="state.mail">
+        <span v-if="v$.mail.$error">{{ v$.mail.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="subject">
-        <input type="text" name="entry.148681851" placeholder="Subject">
+        <input type="text" name="entry.148681851" placeholder="Subject" v-model="state.subject">
+        <span v-if="v$.subject.$error">{{ v$.subject.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="message">
-        <textarea name="entry.1885764049" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="entry.1885764049" cols="30" rows="10" placeholder="Message" v-model="state.message"></textarea>
+        <span v-if="v$.message.$error">{{ v$.message.$errors[0].$message }}</span>
       </div>
       
       <div class="form-element form-buttons-wrapper">
         <div class="form-buttons">
           <div>
-            <input type="submit" value="Submit" class="form-button" @click="notification">
+            <input type="submit" value="Submit" class="form-button" @click="submitForm">
           </div>
           <div>
             <input type="reset" value="Reset" id="reset" class="form-button">
@@ -31,7 +35,7 @@
         </div>
       </div>
 
-      <iframe name="submitComplate" srcdoc="<p>Submitted!</p>" style="display:none;"></iframe>
+      <iframe name="submitComplete" srcdoc="<p>Submitted!</p>" style="display:none;"></iframe>
     
     </form>
     
@@ -40,18 +44,46 @@
 
 
 <script>
+import useValidate from '@vuelidate/core'
+import { required, email, maxLength } from '@vuelidate/validators'
+import { reactive, computed } from 'vue' 
+
 export default {
   name: 'ContentsContact',
+  setup() {
+    const state = reactive({
+      name: "",
+      mail: "",
+      subject: "",
+      message: "",
+    })
+    const rules = computed(() => {
+      return {
+        name: { required, maxLength: maxLength(50) },
+        mail: { required, email },
+        subject: { required, maxLength: maxLength(100) },
+        message: { required, maxLength: maxLength(2000) }
+      }
+    })
+
+    const v$ = useValidate(rules, state)
+
+    return { state, v$ }
+  },
+
   methods: {
-    notification: function() {
-      setTimeout(() => {
-        alert("Submitted!");
-        document.getElementById("reset").click();
-      }, 1000);
+    submitForm() {
+      this.v$.$validate() //checks all inputs
+      if (!this.v$.$error) { // if ANY fail validation
+        alert("Form successfully submitted.")
+        setTimeout(() => {
+          document.getElementById("reset").click();
+        }, 1000)
+      } else {
+        alert("Form faild validation")
+      }
     }
   }
-
-
 }
 </script>
 
