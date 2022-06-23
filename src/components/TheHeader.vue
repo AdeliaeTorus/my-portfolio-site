@@ -2,9 +2,11 @@
   <header>
     <div class="header-content">
       <div class="header-text">
-        <p class="underlined"><router-link to="/">Keisuke Onoue</router-link></p>
+        <p class="underlined"><router-link to="/">{{$t("TheHeader_myname")}}</router-link></p>
       </div>
+      
       <div class="header-buttons">
+        <ChangeLang @change-locale="changeLocale"/>
         <ColorTheme />
         <HamburgerMenu />
       </div>
@@ -13,6 +15,8 @@
 </template>
 
 <script>
+
+import ChangeLang from './functionalities/ChangeLang.vue'
 import ColorTheme from './functionalities/ColorTheme.vue'
 import HamburgerMenu from './functionalities/HamburgerMenu.vue'
 
@@ -20,7 +24,13 @@ export default {
   name: 'TheHeader',
   components: {
     ColorTheme,
-    HamburgerMenu
+    HamburgerMenu,
+    ChangeLang
+  },
+  methods: {
+    changeLocale() {
+      this.$i18n.locale = (this.$i18n.locale === 'ja') ? 'en' : 'ja';
+    }
   }
 }
 </script>
@@ -56,12 +66,13 @@ header {
     }
 
     & > .header-buttons {
+     // background-color: aquamarine;
 
       position: relative;
       height: 100%;
-      width: 100px;
+      width: 150px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
   }
 }

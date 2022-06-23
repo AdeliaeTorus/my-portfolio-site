@@ -1,7 +1,7 @@
 <template>
   <div class="contents" id="skills">
-    <h2 class="title">Skills</h2>
-    <p>Python / JavaScript / HTML / CSS / LaTeX</p>
+    <h2 class="title">{{$t("ContentsSkills_title")}}</h2>
+    <p>{{$t("ContentsSkills_skills")}}</p>
   </div>
 </template>
 

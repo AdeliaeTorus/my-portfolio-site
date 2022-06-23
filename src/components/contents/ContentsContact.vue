@@ -1,36 +1,36 @@
 <template>
   <div class="contents" id="contact">
-    <h2 class="title">Contact</h2>
+    <h2 class="title">{{$t("ContentsContact_title")}}</h2>
 
     <form method="post" target="submitComplete" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqkvIPJKsS6GAeiVrkgsSYkjrx9vNt5eYFC4-5fCX9MS-4BQ/formResponse">
     
       <div class="form-element" id="name">
-        <input type="text" name="entry.1744693801" placeholder="Name" v-model="state.name">
+        <input type="text" name="entry.1744693801" :placeholder="$t('ContentsContact_name')" v-model="state.name">
         <span v-if="v$.name.$error">{{ v$.name.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="mail">
-        <input type="email" name="emailAddress" placeholder="Email" v-model="state.mail">
+        <input type="email" name="emailAddress" :placeholder="$t('ContentsContact_email')" v-model="state.mail">
         <span v-if="v$.mail.$error">{{ v$.mail.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="subject">
-        <input type="text" name="entry.148681851" placeholder="Subject" v-model="state.subject">
+        <input type="text" name="entry.148681851" :placeholder="$t('ContentsContact_subject')" v-model="state.subject">
         <span v-if="v$.subject.$error">{{ v$.subject.$errors[0].$message }}</span>
       </div>
 
       <div class="form-element" id="message">
-        <textarea name="entry.1885764049" cols="30" rows="10" placeholder="Message" v-model="state.message"></textarea>
+        <textarea name="entry.1885764049" cols="30" rows="10" :placeholder="$t('ContentsContact_message')" v-model="state.message"></textarea>
         <span v-if="v$.message.$error">{{ v$.message.$errors[0].$message }}</span>
       </div>
       
       <div class="form-element form-buttons-wrapper">
         <div class="form-buttons">
           <div>
-            <input type="submit" value="Submit" class="form-button" @click="submitForm">
+            <input type="submit" :value="$t('ContentsContact_submit')" class="form-button" @click="submitForm">
           </div>
           <div>
-            <input type="reset" value="Reset" id="reset" class="form-button">
+            <input type="reset" :value="$t('ContentsContact_reset')" id="reset" class="form-button">
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default {
         alert("Form successfully submitted.")
         setTimeout(() => {
           document.getElementById("reset").click();
-        }, 1000)
+        }, 500)
       } else {
         alert("Form faild validation")
       }

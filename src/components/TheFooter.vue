@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <small>© 2022 Keisuke Onoue. All Rights Reserved.</small>
+    <small>{{$t("TheFooter_copyright")}}</small>
   </footer>
 </template>
 

@@ -1,0 +1,57 @@
+{
+  "ContentsBio_title": "経歴",
+  "ContentsBio_1-date": "1999",
+  "ContentsBio_1-event": "大阪に生まれる",
+  "ContentsBio_2-date": "2006-2012",
+  "ContentsBio_2-event": "和泉市立青葉はつが野小学校",
+  "ContentsBio_3-date": "2012-2015",
+  "ContentsBio_3-event": "岸和田市立山直中学校",
+  "ContentsBio_4-date": "2015-2018",
+  "ContentsBio_4-event": "和歌山県立和歌山北高等学校",
+  "ContentsBio_5-date": "2020-2023",
+  "ContentsBio_5-event": "英国放送大学 数学専攻",
+
+  "ContentsContact_title": "連絡フォーム",
+  "ContentsContact_name": "氏名:",
+  "ContentsContact_email": "メールアドレス:",
+  "ContentsContact_subject": "主題:",
+  "ContentsContact_message": "本文:",
+  "ContentsContact_submit": "送信",
+  "ContentsContact_reset": "リセット",
+  
+  "ContentsInterests_title": "興味",
+  "ContentsInterests_p-1": "数学に関しては解析学が好きで、将来は情報幾何学をやりたいと思っています。",
+  "ContentsInterests_p-2": "統計解析や機械学習は理論と実践の両方に興味があり、他にはフロントエンド開発を中心にウェブ開発も趣味で行っています。",
+  
+  "ContentsNews_title": "お知らせ",
+  "ContentsNews_li-1-date": "28/04/2022",
+  "ContentsNews_li-1-news": "This website was made open to the public.",
+  
+  "ContentsSelfintroduction_myname": "オノウエ ケイスケ",
+  "ContentsSelfintroduction_p-1": "イギリスの放送大学で数学を専攻しています。",
+  "ContentsSelfintroduction_p-2": "趣味は散歩とデジタルコンテンツ制作です。",
+
+  "ContentsSkills_title": "技術",
+  "ContentsSkills_skills": "Python / JavaScript / HTML / CSS / LaTeX",
+  
+  "ContentsWorks_title": "作品",
+  
+
+
+
+  "ChangeLang_change-locale": "en",
+
+  "HamburgerMenu_1": "トップ",
+  "HamburgerMenu_2": "作品",
+  "HamburgerMenu_3": "連絡フォーム",
+
+
+
+
+  "TheHeader_myname": "Keisuke Onoue",
+
+  "TheFooter_copyright": "© 2022 Keisuke Onoue. All Rights Reserved.",
+
+  "WorksContainer_statement": "Sorry. Please wait until I upload some of my works."
+
+}

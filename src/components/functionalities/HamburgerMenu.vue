@@ -10,9 +10,9 @@
     <transition name="menu">
       <div class="menu" v-show="ActiveBtn">
         <ul>
-          <li class="underlined-reverse"><router-link to="/">Top</router-link></li>
-          <li class="underlined-reverse"><router-link to="#works">Works</router-link></li>
-          <li class="underlined-reverse"><router-link to="#contact">Contact</router-link></li>
+          <li class="underlined-reverse"><router-link to="/">{{$t("HamburgerMenu_1")}}</router-link></li>
+          <li class="underlined-reverse invalid">{{$t("HamburgerMenu_2")}}</li>
+          <li class="underlined-reverse invalid">{{$t("HamburgerMenu_3")}}</li>
         </ul>
       </div>
     </transition>
@@ -140,6 +140,20 @@ side bar
   color: var(--main-color);
   text-decoration: none;
 }
+
+
+
+
+
+
+
+.invalid {
+  text-decoration: line-through;
+}
+
+
+
+
 
 
 

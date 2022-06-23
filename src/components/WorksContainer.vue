@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Sorry. Please wait until I upload some of my works.</h1>
+    <h1>{{$t("WorksContainer_statement")}}</h1>
   </div>
 </template>
 

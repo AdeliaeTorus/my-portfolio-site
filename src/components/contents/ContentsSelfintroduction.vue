@@ -1,15 +1,8 @@
 <template>
   <div class="contents" id="self-introduction">
-    <h1>Keisuke Onoue</h1>            
-    <p>
-      I am a mathematics student at The Open University 
-      (An university based in the United Kingdom, which provides online education).
-    </p>
-    <p>
-      In my free time, I like listening to music and walking around town while looking at architectures and scenery there.
-      In addition, I like degital content creation such as generative art using deep learning and 3D modeling using Blender.
-      I am just a beginner, though.
-    </p>
+    <h1>{{$t("ContentsSelfintroduction_myname")}}</h1>            
+    <p>{{$t("ContentsSelfintroduction_p-1")}}</p>
+    <p>{{$t("ContentsSelfintroduction_p-2")}}</p>
   </div>
 </template>
 
