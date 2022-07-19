@@ -21,6 +21,7 @@ import ContentsWorks from './contents/ContentsWorks.vue'
 import ContentsNews from './contents/ContentsNews.vue'
 import ContentsContact from './contents/ContentsContact.vue'
 
+
 export default {
   name: 'TheContainer',
   components: {
