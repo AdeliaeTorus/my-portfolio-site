@@ -11,7 +11,7 @@
       <div class="menu" v-show="ActiveBtn">
         <ul>
           <!-- <li class="underlined-reverse"><router-link to="/">{{$t("HamburgerMenu_1")}}</router-link></li> -->
-          <li class="underlined-reverse"><a href="/">{{$t("HamburgerMenu_1")}}</a></li>
+          <li class="underlined-reverse"><a href="/my-portfolio-site/#/">{{$t("HamburgerMenu_1")}}</a></li>
           <li class="underlined-reverse invalid">{{$t("HamburgerMenu_2")}}</li>
           <li class="underlined-reverse invalid">{{$t("HamburgerMenu_3")}}</li>
         </ul>
