@@ -3,7 +3,7 @@
     <div class="header-content">
       <div class="header-text">
         <!-- <p class="underlined"><router-link to="/">{{$t("TheHeader_myname")}}</router-link></p> -->
-        <p class="underlined"><a href="/">{{$t("TheHeader_myname")}}</a></p>
+        <p class="underlined"><a href="https://penguin2723.github.io/my-portfolio-site/#/">{{$t("TheHeader_myname")}}</a></p>
       </div>
       
       <div class="header-buttons">
