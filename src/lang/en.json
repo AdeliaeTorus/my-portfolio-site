@@ -19,17 +19,11 @@
   "ContentsContact_submit": "Submit",
   "ContentsContact_reset": "Reset",
   
-  "ContentsInterests_title": "Interests",
-  "ContentsInterests_p-1": "Concerning mathematics, I am interested in information geometry, so now I am studying probability theory, mathematical statistics and differential geometry at my own pace.",
-  "ContentsInterests_p-2": "My interests in programming are analyzing data using statistics and machine learning in relation to the fields of mathematics I am studying and front-end development, especially creating unique websites using technologies such as WebGL.",
-  
   "ContentsNews_title": "News",
   "ContentsNews_li-1-date": "28/04/2022",
-  "ContentsNews_li-1-news": "This website was made open to the public.",
   
   "ContentsSelfintroduction_myname": "Keisuke Onoue",
   "ContentsSelfintroduction_p-1": "I am a mathematics student at The Open University (An university based in the United Kingdom, which provides online education).",
-  "ContentsSelfintroduction_p-2": "In my free time, I like listening to music and walking around town while looking at architectures and scenery there. In addition, I like degital content creation such as generative art using deep learning and 3D modeling using Blender. I am just a beginner, though.",
 
   "ContentsSkills_title": "Skills",
   "ContentsSkills_skills": "Python / JavaScript / HTML / CSS / LaTeX",

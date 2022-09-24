@@ -19,17 +19,11 @@
   "ContentsContact_submit": "送信",
   "ContentsContact_reset": "リセット",
   
-  "ContentsInterests_title": "興味",
-  "ContentsInterests_p-1": "数学に関しては解析学が好きで、将来は情報幾何学をやりたいと思っています。",
-  "ContentsInterests_p-2": "統計解析や機械学習は理論と実践の両方に興味があり、他にはフロントエンド開発を中心にウェブ開発も趣味で行っています。",
-  
   "ContentsNews_title": "お知らせ",
   "ContentsNews_li-1-date": "28/04/2022",
-  "ContentsNews_li-1-news": "当サイトが開設されました。",
   
   "ContentsSelfintroduction_myname": "オノウエ ケイスケ",
   "ContentsSelfintroduction_p-1": "イギリスの放送大学で数学を専攻しています。",
-  "ContentsSelfintroduction_p-2": "趣味は散歩とデジタルコンテンツ制作。",
 
   "ContentsSkills_title": "技術",
   "ContentsSkills_skills": "Python / JavaScript / HTML / CSS / LaTeX",

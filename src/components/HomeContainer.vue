@@ -4,7 +4,6 @@
     <ContentsSelfintroduction />
     <ContentsBio />
     <ContentsSkills />
-    <ContentsInterests />
     <ContentsWorks />
     <ContentsNews />
     <ContentsContact />
@@ -16,7 +15,6 @@ import ContentsHero from './contents/ContentsHero.vue'
 import ContentsSelfintroduction from './contents/ContentsSelfintroduction.vue'
 import ContentsBio from './contents/ContentsBio.vue'
 import ContentsSkills from './contents/ContentsSkills.vue'
-import ContentsInterests from './contents/ContentsInterests.vue'
 import ContentsWorks from './contents/ContentsWorks.vue'
 import ContentsNews from './contents/ContentsNews.vue'
 import ContentsContact from './contents/ContentsContact.vue'
@@ -29,7 +27,6 @@ export default {
     ContentsSelfintroduction,
     ContentsBio,
     ContentsSkills,
-    ContentsInterests,
     ContentsWorks,
     ContentsNews,
     ContentsContact

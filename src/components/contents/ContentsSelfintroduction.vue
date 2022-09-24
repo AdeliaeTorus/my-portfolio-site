@@ -2,7 +2,6 @@
   <div class="contents" id="self-introduction">
     <h1>{{$t("ContentsSelfintroduction_myname")}}</h1>            
     <p>{{$t("ContentsSelfintroduction_p-1")}}</p>
-    <p>{{$t("ContentsSelfintroduction_p-2")}}</p>
   </div>
 </template>
 
