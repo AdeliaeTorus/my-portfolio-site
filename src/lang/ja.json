@@ -10,6 +10,9 @@
   "ContentsBio_4-event": "和歌山県立和歌山北高等学校",
   "ContentsBio_5-date": "2020-2023",
   "ContentsBio_5-event": "英国放送大学 数学専攻",
+  "ContentsBio_6-date": "2024-",
+  "ContentsBio_6-event": "NAIST MI Lab",
+
 
   "ContentsContact_title": "連絡フォーム",
   "ContentsContact_name": "氏名:",
@@ -23,10 +26,10 @@
   "ContentsNews_li-1-date": "28/04/2022",
   
   "ContentsSelfintroduction_myname": "オノウエ ケイスケ",
-  "ContentsSelfintroduction_p-1": "イギリスの放送大学で数学を専攻しています。",
+  "ContentsSelfintroduction_p-1": "奈良先端科学技術大学院大学先端科学技術研究科先端科学技術専攻情報科学領域数理情報学研究室に在籍中です．ベイズ最適化における事前学習済みガウス過程の汎化誤差的なことをやっています．関数解析，確率解析等を勉強中です．",
 
   "ContentsSkills_title": "技術",
-  "ContentsSkills_skills": "Python / JavaScript / HTML / CSS / LaTeX",
+  "ContentsSkills_skills": "Python / JavaScript / HTML / CSS",
   
   "ContentsWorks_title": "作品",
   

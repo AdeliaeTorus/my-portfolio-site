@@ -10,6 +10,8 @@
   "ContentsBio_4-event": "Wakayamakita high school, Wakayama prefecture",
   "ContentsBio_5-date": "2020-2023",
   "ContentsBio_5-event": "BSc Mathematics (Honours),  The Open University",
+  "ContentsBio_6-date": "2024-",
+  "ContentsBio_6-event": "NAIST MI Lab",
 
   "ContentsContact_title": "Contact",
   "ContentsContact_name": "Name:",
@@ -23,10 +25,10 @@
   "ContentsNews_li-1-date": "28/04/2022",
   
   "ContentsSelfintroduction_myname": "Keisuke Onoue",
-  "ContentsSelfintroduction_p-1": "I am a mathematics student at The Open University (An university based in the United Kingdom, which provides online education).",
+  "ContentsSelfintroduction_p-1": "I am a Dishonorary Professor at SCAMbridge University.",
 
   "ContentsSkills_title": "Skills",
-  "ContentsSkills_skills": "Python / JavaScript / HTML / CSS / LaTeX",
+  "ContentsSkills_skills": "Python / JavaScript / HTML / CSS",
   
   "ContentsWorks_title": "Works",
   

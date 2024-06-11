@@ -12,6 +12,8 @@
       <dd>{{$t("ContentsBio_4-event")}}</dd>
       <dt>{{$t("ContentsBio_5-date")}}</dt>
       <dd>{{$t("ContentsBio_5-event")}}</dd>
+      <dt>{{$t("ContentsBio_6-date")}}</dt>
+      <dd>{{$t("ContentsBio_6-event")}}</dd>
     </dl>
   </div>
 </template>
