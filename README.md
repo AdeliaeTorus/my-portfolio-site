@@ -1,3 +1,5 @@
+no more maintenance. kindly visit [new page](https://k-onoue.github.io/k-onoue/)
+
 # mysite-vue
 
 ## Project setup
